@@ -1,0 +1,27 @@
+{
+  "name": "lodash.log",
+  "version": "1.0.0",
+  "description": "print the intermediate value in a chain to console, make debug easier",
+  "main": "./lib/index.js",
+  "peerDependencies": {
+    "lodash": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanwei0/lodash.log.git"
+  },
+  "author": "Alan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanwei0/lodash.log/issues"
+  },
+  "homepage": "https://github.com/alanwei0/lodash.log#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.71",
+    "typescript": "^2.4.2"
+  }
+}

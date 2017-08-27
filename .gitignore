@@ -1,0 +1,20 @@
+.DS_STORE
+.idea
+.vscode
+node_modules
+dist
+lib
+
+*~
+*.log*
+*.sublime-project
+*.sublime-workspace
+coverage
+
+# vscode
+jsconfig.json
+typings.json
+typings
+
+tmp
+mock
