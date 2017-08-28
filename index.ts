@@ -6,7 +6,9 @@ const log = (value, ...args) => {
 };
 
 if ('log' in _) {
-  console.warn('there has been a \'log\' function in your lodash');
+  console.warn('Please Check! There has been a \'log\' function in your lodash');
 }
 
 _.mixin({ log });
+
+export default _;

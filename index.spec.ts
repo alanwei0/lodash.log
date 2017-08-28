@@ -1,5 +1,4 @@
-import _ from 'lodash';
-import './index.ts';
+import _ from './index';
 
 test('1. base', () => {
   const arr = _.chain([1, 3, 5])

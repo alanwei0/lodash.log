@@ -30,6 +30,7 @@
   "devDependencies": {
     "@types/jest": "^20.0.8",
     "@types/lodash": "^4.14.71",
+    "codecov": "^2.3.0",
     "jest": "^20.0.4",
     "ts-jest": "^20.0.10",
     "typescript": "^2.4.2"
@@ -39,10 +40,18 @@
       "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "mapCoverage": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "*.{ts,tsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
       "js",
+      "jsx",
       "json"
     ]
   }
