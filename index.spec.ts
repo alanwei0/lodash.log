@@ -1,4 +1,5 @@
-import _ from './index';
+import _ from 'lodash';
+import './index';
 
 test('1. base', () => {
   const arr = _.chain([1, 3, 5])
@@ -19,3 +20,11 @@ test('2. format', () => {
 
   expect(v).toBe(true);
 });
+
+// test('3. not in chain', () => {
+//   _.log('hello world');
+//   expect(true).toBe(true);
+// });
+
+// test('4. duplicated log func', () => {
+// });
