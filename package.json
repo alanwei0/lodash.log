@@ -7,7 +7,7 @@
     "lodash": "*"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "tsc"
   },
   "repository": {
@@ -28,7 +28,22 @@
   },
   "homepage": "https://github.com/alanwei0/lodash.log#readme",
   "devDependencies": {
+    "@types/jest": "^20.0.8",
     "@types/lodash": "^4.14.71",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.10",
     "typescript": "^2.4.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
   }
 }
