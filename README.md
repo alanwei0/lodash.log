@@ -1,6 +1,7 @@
 # lodash.log
 
 [![Travis](https://img.shields.io/travis/alanwei0/lodash.log.svg)](https://img.shields.io/travis/alanwei0/lodash.log.svg)
+[![codecov](https://codecov.io/gh/alanwei0/lodash.log/branch/master/graph/badge.svg)](https://codecov.io/gh/alanwei0/lodash.log)
 
 Mix `console.log` into lodash, to print the intermediate value in a chain.
 
