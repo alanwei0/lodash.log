@@ -8,6 +8,10 @@ declare module 'lodash' {
   interface LoDashExplicitWrapperBase<T, TWrapper> {
     log(...optionalParams: any[]): TWrapper;
   }
+
+  interface LoDashImplicitWrapperBase<T, TWrapper> {
+    log(...optionalParams: any[]): TWrapper;
+  }
 }
 
 const log = (value, ...args) => {
