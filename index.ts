@@ -1,7 +1,5 @@
 import _ from 'lodash';
 
-// todo: not print in production env
-
 declare module 'lodash' {
   interface LoDashStatic {
     log(message?: any, ...optionalParams: any[]): void;
@@ -17,7 +15,11 @@ declare module 'lodash' {
 }
 
 const log = (value, ...args) => {
-  let logFunc = v => console.log(...args, v);
+  let logFunc = v => {};
+  // do not print in production env
+  if (process.env.NODE_ENV !== 'production') {
+    logFunc = v => console.log(...args, v);
+  }
   return _.tap(value, logFunc);
 };
 
