@@ -19,8 +19,12 @@ const log = (value, ...args) => {
   return _.tap(value, logFunc);
 };
 
-if ('log' in _) {
-  console.warn('Please Check! There has been a \'log\' function in your lodash');
-}
+export const logFactory = lodash => {
+  if ('log' in lodash && lodash.log !== log && process.env.NODE_ENV !== 'production') {
+    throw new Error('Please Check! There has been another \'log\' in your lodash');
+  }
 
-_.mixin({ log });
+  lodash.mixin({ log });
+};
+
+logFactory(_);
