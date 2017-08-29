@@ -1,5 +1,7 @@
 import _ from 'lodash';
 
+// todo: not print in production env
+
 declare module 'lodash' {
   interface LoDashStatic {
     log(message?: any, ...optionalParams: any[]): void;
