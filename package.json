@@ -22,7 +22,7 @@
     "index.d.ts"
   ],
   "author": "Alan",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/alanwei0/lodash.log/issues"
   },

@@ -1,7 +1,9 @@
 # lodash.log
 
-[![Travis](https://img.shields.io/travis/alanwei0/lodash.log.svg)](https://img.shields.io/travis/alanwei0/lodash.log.svg)
-[![codecov](https://img.shields.io/codecov/c/github/alanwei0/lodash.log.svg)](https://img.shields.io/codecov/c/github/alanwei0/lodash.log.svg)
+[![Travis](https://img.shields.io/travis/alanwei0/lodash.log.svg)](https://travis-ci.org/alanwei0/lodash.log)
+[![codecov](https://img.shields.io/codecov/c/github/alanwei0/lodash.log.svg)](https://codecov.io/gh/alanwei0/lodash.log)
+[![npm-version](https://img.shields.io/npm/v/lodash.log.svg)](https://www.npmjs.com/package/lodash.log)
+[![license](https://img.shields.io/github/license/alanwei0/lodash.log.svg)](https://github.com/alanwei0/lodash.log)
 
 Mix `console.log` into lodash, to print the intermediate value in a chain.
 
