@@ -8,6 +8,7 @@ Mix `console.log` into lodash, to print the intermediate value in a chain.
 ## Other Features
 
 - TypeScript supported
+- Not print in production env
 
 ## Install
 

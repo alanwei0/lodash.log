@@ -1,4 +1,7 @@
 {
   "extends": ["tslint:recommended"],
-  "rules": {}
+  "rules": {
+    "arrow-parens": false,
+    "quotemark": ["single", "jsx-double", "avoid-escape"]
+  }
 }

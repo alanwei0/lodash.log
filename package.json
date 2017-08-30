@@ -3,13 +3,12 @@
   "version": "1.0.1",
   "description": "print the intermediate value in a chain to console, make debug easier",
   "main": "./lib/index.js",
-  "peerDependencies": {
-    "lodash": "*"
-  },
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "codecov": "codecov"
+    "codecov": "codecov",
+    "lint:ts": "tslint -p ./tsconfig.json --type-check",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -33,9 +32,13 @@
     "@types/lodash": "^4.14.71",
     "@types/node": "^8.0.25",
     "codecov": "^2.3.0",
+    "husky": "^0.14.3",
     "jest": "^20.0.4",
+    "lint-staged": "^4.0.4",
     "ts-jest": "^20.0.10",
-    "typescript": "^2.4.2"
+    "tslint": "^5.7.0",
+    "typescript": "^2.4.2",
+    "lodash": "*"
   },
   "jest": {
     "transform": {
@@ -45,7 +48,7 @@
     "mapCoverage": true,
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "*.{ts,tsx}",
+      "src/**/*.{ts,tsx}",
       "!**/node_modules/**",
       "!**/vendor/**"
     ],
@@ -56,5 +59,8 @@
       "jsx",
       "json"
     ]
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "lint:ts"
   }
 }

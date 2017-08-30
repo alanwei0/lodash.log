@@ -50,7 +50,7 @@ test('format message', () => {
 
 test('conflict with another log', () => {
   const nowLog = _.log;
-  _.mixin({ log: () => {} });
+  _.mixin({ log: _.noop });
   expect(() => logFactory(_)).toThrow('Please Check! There has been another \'log\' in your lodash');
   _.mixin({ log: nowLog });
 });
