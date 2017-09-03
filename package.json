@@ -35,10 +35,11 @@
     "husky": "^0.14.3",
     "jest": "^20.0.4",
     "lint-staged": "^4.0.4",
+    "lodash": "*",
     "ts-jest": "^20.0.10",
     "tslint": "^5.7.0",
-    "typescript": "^2.4.2",
-    "lodash": "*"
+    "tslint-alan": "^1.0.1",
+    "typescript": "^2.4.2"
   },
   "jest": {
     "transform": {
