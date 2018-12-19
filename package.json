@@ -1,6 +1,6 @@
 {
   "name": "lodash.log",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "print the intermediate value in a chain to console, make debug easier",
   "main": "./lib/index.js",
   "scripts": {
